@@ -7,4 +7,8 @@
  * @returns {String} - deberia retornar un string.
  */
 
-function isPalindrome(str) {}
+ function isPalindrome(str) {
+    let reverseString = str.split('').reverse().join('');
+    if (str === reverseString) return true;
+    else return false
+}

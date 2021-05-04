@@ -11,5 +11,14 @@
  * @param {string} second - esto es un string.
  * @returns {boolean} - deberia retornar true o false.
  */
-
-function validAnagram(first, second) {}
+ function validAnagram(first, second) {
+     if(first.length !== second.length) return false;
+    let outcome = [];
+    for(let i = 0; i < first.length; i++){
+        if(first.indexOf(second[i]) === -1) {
+            return false
+        }
+    
+    }
+return true;
+}

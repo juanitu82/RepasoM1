@@ -8,4 +8,7 @@
  * @returns {Number} - deberia retornar un number.
  */
 
-function factorial(num) {}
+function factorial(num) {
+    if(num === 0 || num < 2) return 1;
+    return num * factorial(num - 1)
+}

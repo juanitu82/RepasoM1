@@ -8,4 +8,17 @@
  * @returns {Array || undefined} - deberia retornar un array o undefined.
  */
 
-function power(base, exp) {}
+ function power(base, exp) {
+    let result = base;
+    for(let i = exp - 1; i > 0; i--){
+        result *= base;
+        console.log(result)
+
+    }
+    return result;
+}
+
+// function power(base, exp) {
+//     if (exp === 0) return 1;
+//     return base * power(base, exp - 1);
+//   }

@@ -9,4 +9,8 @@
  * @returns {Array || undefined} - deberia retornar un array o undefined.
  */
 
-function recursiveRange(num) {}
+function recursiveRange(num) {
+    
+    if(num < 1) return num;
+    else return num + recursiveRange(num-1);
+}

@@ -9,4 +9,14 @@
  * @returns {boolean} - deberia retornar true o false.
  */
 
-function same(arr1, arr2) {}
+function same(arr1, arr2) {
+    if(arr1.length !== arr2.length) return false;
+    let potencia = true;
+    for(let i= 0; i < arr1.length; i++){
+        if(Math.pow(arr2[i], 2) === arr1[i]) potencia = true;
+        else return potencia = false;
+    }
+    return potencia
+}
+
+
